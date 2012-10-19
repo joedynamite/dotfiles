@@ -1,0 +1,4 @@
+[
+  { "keys": ["ctrl+]"], "command": "next_result" },
+  { "keys": ["ctrl+["], "command": "prev_result" }
+]

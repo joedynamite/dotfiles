@@ -1,0 +1,38 @@
+// Settings in here override those in "Default/Preferences.sublime-settings", and
+// are overridden in turn by file type specific settings.
+{
+  "auto_reload_changed": true,
+  "color_scheme": "Packages/Color Scheme - Base16/base16-default.dark.tmTheme",
+  "draw_white_space": "selection",
+  "ensure_newline_at_eof_on_save": true,
+  "file_exclude_patterns":
+  [
+    ".DS_Store",
+    "Thumbs.db",
+    "*.un~"
+  ],
+  "fold_buttons": false,
+  "folder_exclude_patterns":
+  [
+    ".git",
+    ".sass-cache"
+  ],
+  "font_face": "DejaVu Sans Mono",
+  "font_options": [ "no_antialias" ],
+  "font_size": 14.0,
+  "highlight_line": true,
+  "highlight_modified_tabs": true,
+  "hot_exit": false,
+  "ignored_packages": [],
+  "line_padding_bottom": 1,
+  "line_padding_top": 1,
+  "remember_open_files": false,
+  "rulers": [ 80 ],
+  "show_minimap": false,
+  "tab_size": 2,
+  "theme": "Soda Light.sublime-theme",
+  "translate_tabs_to_spaces": true,
+  "trim_trailing_white_space_on_save": true,
+  "vintage_start_in_command_mode": true,
+  "word_wrap": false
+}

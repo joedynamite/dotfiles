@@ -1,0 +1,13 @@
+.DS_Store
+Thumbs.db
+
+*.swp
+*~
+
+.powrc
+.powder
+
+.sass-cache
+app/views/devise
+config/*.yml
+tmp/*

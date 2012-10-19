@@ -1,0 +1,35 @@
+[alias]
+  st = "status -sb"
+  count = "shortlog -sn"
+  undo = "reset --soft HEAD^"
+
+[color]
+  ui = true
+
+[core]
+  excludesfile = "~/.gitignore_global"
+
+[diff]
+  tool = "Kaleidoscope"
+
+[difftool]
+  prompt = false
+
+[difftool "Kaleidoscope"]
+  cmd = "ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\""
+
+[github]
+  user = "joedynamite"
+
+[help]
+  autocorrect = 1
+
+[push]
+  default = "tracking"
+
+[rebase]
+  autosquash = true
+
+[user]
+  name = "Joe Bilt"
+  email = "code@joebilt.com"
