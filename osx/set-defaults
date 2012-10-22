@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Show the ~/Library folder.
+chflags nohidden ~/Library
+
+# Disable the creation of .DS_Store files on remote servers.
+defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+
+# Disable font anti-aliasing in Xcode.
+defaults write com.apple.dt.Xcode AppleAntiAliasingThreshold 18
+defaults write com.apple.dt.Xcode NSFontDefaultScreenFontSubstitutionEnabled -bool YES
+
+# Disable Time Machine local backup storage.
+sudo tmutil disablelocal
