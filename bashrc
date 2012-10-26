@@ -4,9 +4,6 @@
 # Git completion
 . "/usr/local/etc/bash_completion.d/git-completion.bash"
 
-# RVM
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-
 # Aliases
 alias git="hub"
 alias haml="haml -q -f html5 --unix-newlines"
@@ -23,11 +20,14 @@ alias v="vim"
 CLICOLOR="1"
 GREPCOLORS="ExGxFxDxCxDxDxHbAdExEx"
 LSCOLORS="ExGxFxDxCxDxDxHbAdExEx"
-PATH="/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/share/python:$PATH"
+PATH="$HOME/.rbenv/shims:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/share/python:$PATH"
 PS1="\e[1;31m\u\e[0;39m at \e[1;33m\h\e[0;39m in \e[1;32m\w\e[0;39m\$(git_prompt) on \e[1;35m\d\e[0;39m at \e[1;36m\@\e[0;39m \n⚡ "
 VISUAL="vim"
 
 export CLICOLOR GREPCOLORS LSCOLORS PATH PS1 VISUAL
+
+# rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Functions
 function git_prompt {
