@@ -7,6 +7,7 @@ filetype plugin indent on
 let base16colorspace=256
 
 set background=dark
+set clipboard=unnamed
 set colorcolumn=81
 set cursorline
 set expandtab
