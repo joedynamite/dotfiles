@@ -16,12 +16,21 @@ alias scss="scss --unix-newlines"
 alias unhitch="hitch -u"
 alias v="vim"
 
+# Colors
+AQUA="\033[1;36m"
+BLUE="\033[1;34m"
+GREEN="\033[1;32m"
+PURPLE="\033[1;35m"
+RED="\033[1;31m"
+WHITE="\033[0;39m"
+YELLOW="\033[1;33m"
+
 # Environment variables
 CLICOLOR="1"
 GREPCOLORS="ExGxFxDxCxDxDxHbAdExEx"
 LSCOLORS="ExGxFxDxCxDxDxHbAdExEx"
 PATH="$HOME/.rbenv/shims:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/share/python:$PATH"
-PS1="\e[1;31m\u\e[0;39m at \e[1;33m\h\e[0;39m in \e[1;32m\w\e[0;39m\$(git_prompt) on \e[1;35m\d\e[0;39m at \e[1;36m\@\e[0;39m \n⚡ "
+PS1="$RED\u$WHITE at $YELLOW\h$WHITE in $GREEN\w$WHITE\$(git_prompt) on $PURPLE\d$WHITE at $AQUA\@$WHITE \n⚡ "
 VISUAL="vim"
 
 export CLICOLOR GREPCOLORS LSCOLORS PATH PS1 VISUAL
@@ -32,9 +41,9 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # Functions
 function git_prompt {
   local _branch_name=`git branch --no-color 2> /dev/null | awk '/^\*/ { print $2 }'`
-  local _dirty=`[[ $(git status 2> /dev/null | tail -n1) != "nothing to commit (working directory clean)" ]] && echo "\033[0;39m with \033[1;34mΔ"`
+  local _dirty=`[[ $(git status 2> /dev/null | tail -n1) != "nothing to commit, working directory clean" ]] && echo "$WHITE with ${BLUE}Δ"`
 
   if [ -n "$_branch_name" ]
-    then echo -e " on [±:\033[1;34m$_branch_name$_dirty\033[0;39m]"
+    then echo -e " on [±:$BLUE$_branch_name$_dirty$WHITE]"
   fi
 }
