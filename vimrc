@@ -13,11 +13,12 @@ set cursorline
 set expandtab
 set guifont=DejaVu\ Sans\ Mono:h14
 set guioptions-=T
-set list
+set list listchars=eol:¬,tab:▸\ ,trail:･
 set noantialias
 set number
 set ruler
 set softtabstop=2
+set tabstop=2
 set t_Co=256
 set undofile
 
