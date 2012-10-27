@@ -1,0 +1,16 @@
+{
+  // Put your custom syntax rules here:
+  "syntaxes": [
+    {
+      "name": "Cucumber/Syntaxes/Cucumber Steps",
+      "rules": [ { "file_name": ".*steps\\.rb$" } ]
+    },
+    {
+      "name": "RSpec/Syntaxes/RSpec",
+      "rules": [
+        { "file_name": ".*spec\\.rb$" },
+        { "file_name": ".*\/spec\/.*\\.rb$" }
+      ]
+    }
+  ]
+}
