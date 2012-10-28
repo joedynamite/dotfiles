@@ -1,5 +1,5 @@
 [
-  { "keys": ["ctrl+]"], "command": "next_result" },
-  { "keys": ["ctrl+["], "command": "prev_result" },
+  { "keys": ["]", "q"], "command": "next_result" },
+  { "keys": ["[", "q"], "command": "prev_result" },
   { "keys": ["alt+m"], "command": "markdown_preview", "target": "browser" }
 ]
