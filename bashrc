@@ -1,5 +1,5 @@
 # Base16 shell colors
-. "$HOME/Source/base16-shell/base16-default.dark.sh"
+. "$HOME/src/base16-shell/base16-default.dark.sh"
 
 # Git completion
 . "/usr/local/etc/bash_completion.d/git-completion.bash"
