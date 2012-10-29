@@ -1,32 +1,129 @@
 require 'rake'
 
 EXCLUDES = ['README.md', 'Rakefile']
-HOME     = ENV['HOME']
-PWD      = ENV['PWD']
-SUBL     = "#{HOME}/Library/Application Support/Sublime Text 2/Packages/User"
 
-task :install do
-  linkable_files = Dir.glob('*').reject { |f| File.directory? f } - EXCLUDES
-  sublime_files  = Dir.glob('sublime/*')
+HOME_DIRECTORY    = ENV['HOME']
+PRESENT_DIRECTORY = ENV['PWD']
+SRC_DIRECTORY     = "#{HOME_DIRECTORY}/src"
+SUBLIME_PACKAGES  = "#{HOME_DIRECTORY}/Library/Application Support/Sublime Text 2/Packages"
+VIM_DIRECTORY     = "#{HOME_DIRECTORY}/.vim"
 
-  linkable_files.each { |filename| linkup(filename) }
-  sublime_files.each  { |filename| linkup(filename, SUBL, false) }
-end
+REPOSITORIES = {
+  source: {
+    repos: [
+      [ 'chriskempson/base16-iterm2' ],
+      [ 'chriskempson/base16-shell' ]
+    ]
+  },
+  sublime: {
+    packages: [
+      [ 'buymeasoda/soda-theme', 'Theme - Soda' ],
+      [ 'chriskempson/base16-textmate', 'Color Scheme - Base16' ],
+      [ 'cucumber/cucumber-tmbundle', 'Cucumber' ],
+      [ 'ignacysokolowski/SublimeVintageNumbers', 'Vintage Numbers' ],
+      [ 'jashkenas/coffee-script-tmbundle', 'CoffeeScript' ],
+      [ 'jcartledge/sublime-surround', 'Surround' ],
+      [ 'jcartledge/vintage-sublime-surround', 'Vintage Surround' ],
+      [ 'kemayo/sublime-text-2-git', 'Git' ],
+      [ 'kuroir/SCSS.tmbundle', 'SCSS', 'SublimeText2' ],
+      [ 'phillipkoebbe/DetectSyntax', 'DetectSyntax' ],
+      [ 'revolunet/sublimetext-markdown-preview', 'Markdown Preview' ],
+      [ 'rspec/rspec-tmbundle', 'RSpec' ],
+      [ 'SublimeText/CTags', 'CTags' ],
+      [ 'wbond/sublime_package_control', 'Package Control']
+    ]
+  },
+  vim: {
+    autoload: [ [ 'tpope/vim-pathogen' ] ],
+    bundle: [
+      [ 'tpope/vim-bundler' ],
+      [ 'tpope/vim-commentary' ],
+      [ 'tpope/vim-cucumber' ],
+      [ 'tpope/vim-endwise' ],
+      [ 'tpope/vim-eunuch' ],
+      [ 'tpope/vim-fugitive' ],
+      [ 'tpope/vim-git' ],
+      [ 'tpope/vim-haml' ],
+      [ 'tpope/vim-markdown' ],
+      [ 'tpope/vim-rails' ],
+      [ 'tpope/vim-rake' ],
+      [ 'tpope/vim-repeat' ],
+      [ 'tpope/vim-speeddating' ],
+      [ 'tpope/vim-surround' ],
+      [ 'tpope/vim-unimpaired' ]
+    ],
+    colors: [ [ 'chriskempson/base16-vim' ] ]
+  }
+}
 
-def linkup(filename, target_dir=HOME, dotfile=true)
-  file = [PWD, filename].join('/')
+namespace :dotfiles do
+  task all: ['clone', 'link', 'system']
 
-  filename.insert(0, '.') if dotfile
-  filename = filename.split('/')[1] unless dotfile
+  desc 'Clone and symlink dependent repositories.'
+  task :clone do
+    REPOSITORIES.each do |mod, submods|
+      submods.each do |submod, repositories|
+        repositories.each do |repository|
+          clone_repository(repository)
 
-  target = [target_dir, filename].join('/')
+          case mod
+          when :sublime
+            create_symlink("#{SRC_DIRECTORY}/#{repository[0].split('/')[1]}", "#{SUBLIME_PACKAGES}/#{repository[1] || repository[0].split('/')[1]}")
+          when :vim
+            FileUtils.mkdir_p "#{VIM_DIRECTORY}/#{submod}" unless File.directory? "#{VIM_DIRECTORY}/#{submod}"
 
-  if File.exists?(target) || File.symlink?(target)
-    backup = [target, 'backup'].join('.')
-    FileUtils.mv target, backup, force: true unless File.identical? target, backup
+            if submod == :bundle
+              create_symlink("#{SRC_DIRECTORY}/#{repository[0].split('/')[1]}", "#{VIM_DIRECTORY}/bundle/#{repository[1] || repository[0].split('/')[1]}")
+            else
+              FileUtils.cd "#{SRC_DIRECTORY}/#{repository[0].split('/')[1]}" do
+                files = Dir.glob('*/*')
+                files.each { |file| create_symlink("#{SRC_DIRECTORY}/#{repository[0].split('/')[1]}/#{file}", "#{VIM_DIRECTORY}/#{submod}/#{file.split('/')[1]}") }
+              end
+            end
+          end
+        end
+      end
+    end
   end
 
-  FileUtils.ln_s file, target, force: true
+  desc 'Symlink main dotfiles and other settings files.'
+  task :link do
+    home_files = Dir.glob('*').reject { |f| File.directory? f } - EXCLUDES
+    sublime_files  = Dir.glob('sublime/*')
+
+    home_files.each { |filename| create_symlink("#{PRESENT_DIRECTORY}/#{filename}", "#{HOME_DIRECTORY}/.#{filename}") }
+    sublime_files.each  { |filename| create_symlink("#{PRESENT_DIRECTORY}/#{filename}", "#{SUBLIME_PACKAGES}/User/#{filename.split('/')[1]}") }
+  end
+
+  def clone_repository(repository, target_directory=SRC_DIRECTORY)
+    target_file = "#{target_directory}/#{repository[0].split('/')[1]}"
+
+    if File.exists? target_file
+      puts "** #{repository[0]} already cloned. **"
+    else
+      puts "\n**** Cloning #{repository[0]} ****"
+      system "git clone -b #{repository[2] || 'master'} 'https://github.com/#{repository[0]}.git' '#{target_file}'"
+    end
+  end
+
+  desc 'Run Mac OS X settings script.'
+  task :system do
+    system "#{PRESENT_DIRECTORY}/osx/set-defaults"
+  end
+
+  def create_symlink(source, target)
+    unless File.symlink?(target) && File.readlink(target) == source
+      if File.exists?(target)
+        backup = [target, 'backup'].join('.')
+        FileUtils.mv target, backup, force: true unless File.identical? target, backup
+      end
+
+      FileUtils.ln_s source, target, force: true
+    end
+  end
 end
 
-task default: 'install'
+desc 'Run all dotfiles tasks in ordered succession.'
+task dotfiles: 'dotfiles:all'
+
+task default: :dotfiles
