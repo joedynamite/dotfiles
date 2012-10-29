@@ -1,5 +1,15 @@
 [
-  { "keys": ["]", "q"], "command": "next_result" },
-  { "keys": ["[", "q"], "command": "prev_result" },
-  { "keys": ["alt+m"], "command": "markdown_preview", "target": "browser" }
+  {
+    "keys": [ "]", "q" ],
+    "command": "next_result"
+  },
+  {
+    "keys": [ "[", "q" ],
+    "command": "prev_result"
+  },
+  {
+    "keys": [ "alt+m" ],
+    "command": "markdown_preview",
+    "target": "browser"
+  }
 ]
