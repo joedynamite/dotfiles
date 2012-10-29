@@ -3,7 +3,7 @@
 {
   "auto_reload_changed": true,
   "color_scheme": "Packages/Color Scheme - Base16/base16-default.dark.tmTheme",
-  "draw_white_space": "selection",
+  "draw_white_space": "all",
   "ensure_newline_at_eof_on_save": true,
   "file_exclude_patterns":
   [
