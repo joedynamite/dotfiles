@@ -7,6 +7,7 @@ PRESENT_DIRECTORY = ENV['PWD']
 SRC_DIRECTORY     = "#{HOME_DIRECTORY}/src"
 SUBLIME_PACKAGES  = "#{HOME_DIRECTORY}/Library/Application Support/Sublime Text 2/Packages"
 VIM_DIRECTORY     = "#{HOME_DIRECTORY}/.vim"
+XCODE_DIRECTORY   = "#{HOME_DIRECTORY}/Library/Developer/Xcode/UserData/"
 
 REPOSITORIES = {
   source: {
@@ -53,6 +54,9 @@ REPOSITORIES = {
       [ 'tpope/vim-unimpaired' ]
     ],
     colors: [ [ 'chriskempson/base16-vim' ] ]
+  },
+  xcode: {
+    themes: [ [ 'joedynamite/base16-xcode4' ] ]
   }
 }
 
@@ -79,6 +83,13 @@ namespace :dotfiles do
                 files = Dir.glob('*/*')
                 files.each { |file| create_symlink("#{SRC_DIRECTORY}/#{repository[0].split('/')[1]}/#{file}", "#{VIM_DIRECTORY}/#{submod}/#{file.split('/')[1]}") }
               end
+            end
+          when :xcode
+            FileUtils.mkdir_p "#{XCODE_DIRECTORY}/FontAndColorThemes" unless File.directory? "#{XCODE_DIRECTORY}/FontAndColorThemes"
+
+            FileUtils.cd "#{SRC_DIRECTORY}/#{repository[0].split('/')[1]}" do
+              files = Dir.glob('*') - EXCLUDES
+              files.each { |file| create_symlink("#{SRC_DIRECTORY}/#{repository[0].split('/')[1]}/#{file}", "#{XCODE_DIRECTORY}/FontAndColorThemes/#{file}") }
             end
           end
         end
