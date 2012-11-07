@@ -30,7 +30,7 @@ YELLOW="\033[1;33m"
 CLICOLOR="1"
 GREPCOLORS="ExGxFxDxCxDxDxHbAdExEx"
 LSCOLORS="ExGxFxDxCxDxDxHbAdExEx"
-PATH="$HOME/.rbenv/shims:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/share/python:$PATH"
+PATH="/usr/local/heroku/bin:$HOME/.rbenv/shims:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/local/share/python:$PATH"
 PS1="$RED\u$WHITE at $YELLOW\h$WHITE in $GREEN\w$WHITE\$(git_prompt) on $PURPLE\d$WHITE at $AQUA\@$WHITE \n⚡ "
 VISUAL="vim"
 
