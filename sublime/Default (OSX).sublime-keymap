@@ -11,5 +11,9 @@
     "keys": [ "alt+m" ],
     "command": "markdown_preview",
     "target": "browser"
+  },
+  {
+    "keys": [ "ctrl+]" ],
+    "command": "navigate_to_definition"
   }
 ]
