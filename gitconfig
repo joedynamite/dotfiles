@@ -2,6 +2,7 @@
   st = "status -sb"
   count = "shortlog -sn"
   undo = "reset --soft HEAD^"
+  amend = "commit --amend"
 
 [color]
   ui = true
