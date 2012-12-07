@@ -17,13 +17,23 @@
   prompt = false
 
 [difftool "Kaleidoscope"]
-  cmd = "ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\""
+  cmd = "ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\""
 
 [github]
   user = "joedynamite"
 
 [help]
   autocorrect = 1
+
+[merge]
+  tool = "Kaleidoscope"
+
+[mergetool]
+  prompt = false
+
+[mergetool "Kaleidoscope"]
+  cmd = "ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot"
+  trustExitCode = true
 
 [push]
   default = "tracking"
