@@ -10,6 +10,10 @@
         { "file_name": ".*spec\\.rb$" },
         { "file_name": ".*\/spec\/.*\\.rb$" }
       ]
+    },
+    {
+      "name": "Rails/Ruby Haml",
+      "rules": [ { "file_name": ".*\\.hamlc$" } ]
     }
   ]
 }
