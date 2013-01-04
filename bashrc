@@ -48,3 +48,10 @@ function git_prompt {
     then echo -e " on [±:$BLUE$_branch_name$_dirty$WHITE]"
   fi
 }
+
+function hitch {
+  command hitch "$@"
+  if [[ -s "$HOME/.hitch_export_authors" ]] ; then source "$HOME/.hitch_export_authors" ; fi
+}
+
+hitch
