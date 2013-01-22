@@ -107,7 +107,7 @@ namespace :dotfiles do
   end
 
   def clone_repository(repository, target_directory=SRC_DIRECTORY)
-    target_file = "#{target_directory}/#{repository[0].split('/')[1]}"
+    target_file = "#{target_directory}/#{repository[0].split('/')[1].gsub('.', '-')}"
 
     if File.exists? target_file
       puts "** #{repository[0]} already cloned. **"
