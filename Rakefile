@@ -25,7 +25,7 @@ REPOSITORIES = {
       [ 'jashkenas/coffee-script-tmbundle', 'CoffeeScript' ],
       [ 'jcartledge/sublime-surround', 'Surround' ],
       [ 'jcartledge/vintage-sublime-surround', 'Vintage Surround' ],
-      [ 'kemayo/sublime-text-2-git', 'Git' ],
+      [ 'joedynamite/sublime-text-2-git', 'Git' ],
       [ 'kuroir/SCSS.tmbundle', 'SCSS', 'SublimeText2' ],
       [ 'phillipkoebbe/DetectSyntax', 'DetectSyntax' ],
       [ 'revolunet/sublimetext-markdown-preview', 'Markdown Preview' ],
