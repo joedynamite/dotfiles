@@ -13,3 +13,5 @@ Thumbs.db
 app/views/devise
 config/*.yml
 tmp/*
+
+vendor/bundle

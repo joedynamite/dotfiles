@@ -101,9 +101,13 @@ namespace :dotfiles do
   task :link do
     home_files = Dir.glob('*').reject { |f| File.directory? f } - EXCLUDES
     sublime_files  = Dir.glob('sublime/*')
+    bundler_files = Dir.glob('bundle/*')
 
     home_files.each { |filename| create_symlink("#{PRESENT_DIRECTORY}/#{filename}", "#{HOME_DIRECTORY}/.#{filename}") }
     sublime_files.each  { |filename| create_symlink("#{PRESENT_DIRECTORY}/#{filename}", "#{SUBLIME_PACKAGES}/User/#{filename.split('/')[1]}") }
+
+    FileUtils.mkdir_p "#{HOME_DIRECTORY}/.bundle" unless File.directory? "#{HOME_DIRECTORY}/.bundle"
+    bundler_files.each { |filename| create_symlink("#{PRESENT_DIRECTORY}/#{filename}", "#{HOME_DIRECTORY}/.bundle/#{filename}") }
   end
 
   def clone_repository(repository, target_directory=SRC_DIRECTORY)

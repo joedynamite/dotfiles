@@ -16,8 +16,10 @@
   "fold_buttons": false,
   "folder_exclude_patterns":
   [
+    ".bundle",
     ".git",
-    ".sass-cache"
+    ".sass-cache",
+    "vendor/bundle"
   ],
   "font_face": "DejaVu Sans Mono",
   "font_options": [ "no_antialias" ],
