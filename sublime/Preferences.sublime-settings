@@ -11,7 +11,8 @@
     "Thumbs.db",
     "*.swp",
     ".tags*",
-    "*.un~"
+    "*.un~",
+    "tmp/restart.txt"
   ],
   "fold_buttons": false,
   "folder_exclude_patterns":
