@@ -35,6 +35,9 @@
   cmd = "ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot"
   trustExitCode = true
 
+[pull]
+  rebase = true
+
 [push]
   default = "tracking"
 
