@@ -14,4 +14,5 @@ app/views/devise
 config/*.yml
 tmp/*
 
+.bundle/
 vendor/bundle
