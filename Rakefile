@@ -37,6 +37,7 @@ REPOSITORIES = {
   vim: {
     autoload: [ [ 'tpope/vim-pathogen' ] ],
     bundle: [
+      [ 'kchmck/vim-coffee-script' ],
       [ 'tpope/vim-bundler' ],
       [ 'tpope/vim-commentary' ],
       [ 'tpope/vim-cucumber' ],
