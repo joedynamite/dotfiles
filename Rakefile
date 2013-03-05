@@ -39,6 +39,7 @@ REPOSITORIES = {
     bundle: [
       [ 'kchmck/vim-coffee-script' ],
       [ 'tpope/vim-bundler' ],
+      [ 'tpope/vim-characterize' ],
       [ 'tpope/vim-commentary' ],
       [ 'tpope/vim-cucumber' ],
       [ 'tpope/vim-endwise' ],
