@@ -27,6 +27,7 @@ REPOSITORIES = {
       [ 'jcartledge/vintage-sublime-surround', 'Vintage Surround' ],
       [ 'joedynamite/sublime-text-2-git', 'Git' ],
       [ 'kuroir/SCSS.tmbundle', 'SCSS', 'SublimeText2' ],
+      [ 'lmno/TOML', 'TOML' ],
       [ 'phillipkoebbe/DetectSyntax', 'DetectSyntax' ],
       [ 'revolunet/sublimetext-markdown-preview', 'Markdown Preview' ],
       [ 'rspec/rspec-tmbundle', 'RSpec' ],
