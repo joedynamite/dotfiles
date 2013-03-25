@@ -31,7 +31,6 @@ REPOSITORIES = {
       [ 'lmno/TOML', 'TOML' ],
       [ 'revolunet/sublimetext-markdown-preview', 'Markdown Preview' ],
       [ 'rspec/rspec-tmbundle', 'RSpec' ],
-      [ 'SublimeText/CTags', 'CTags' ],
       [ 'wbond/sublime_package_control', 'Package Control', 'python3' ]
     ]
   },
