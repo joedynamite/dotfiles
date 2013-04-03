@@ -16,7 +16,7 @@ You can also use `rake` to run individual components:
 
 The `rake dotfiles` tasks listed above will change settings and/or install packages to the following software, so the assumption is that you have them installed.
 
-- Sublime Text 2 and the `subl` terminal command
+- Sublime Text 3 beta and the `subl` terminal command
 - Xcode 4
 - iTerm 2
 
