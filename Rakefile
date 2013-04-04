@@ -12,53 +12,53 @@ XCODE_DIRECTORY   = "#{HOME_DIRECTORY}/Library/Developer/Xcode/UserData/"
 REPOSITORIES = {
   source: {
     repos: [
-      [ 'chriskempson/base16-iterm2' ],
-      [ 'chriskempson/base16-shell' ]
+      ['chriskempson/base16-iterm2'],
+      ['chriskempson/base16-shell']
     ]
   },
   sublime: {
     packages: [
-      [ 'buymeasoda/soda-theme', 'Theme - Soda', 'soda-st3' ],
-      [ 'chriskempson/base16-textmate', 'Color Scheme - Base16' ],
-      [ 'cucumber/cucumber-tmbundle', 'Cucumber' ],
-      [ 'facelessuser/ApplySyntax', 'ApplySyntax', 'ST3' ],
-      [ 'ignacysokolowski/SublimeVintageNumbers', 'Vintage Numbers' ],
-      [ 'jashkenas/coffee-script-tmbundle', 'CoffeeScript' ],
-      [ 'jcartledge/sublime-surround', 'Surround' ],
-      [ 'jcartledge/vintage-sublime-surround', 'Vintage Surround' ],
-      [ 'joedynamite/sublime-text-2-git', 'Git', 'python3' ],
-      [ 'kuroir/SCSS.tmbundle', 'SCSS', 'SublimeText2' ],
-      [ 'lmno/TOML', 'TOML' ],
-      [ 'revolunet/sublimetext-markdown-preview', 'Markdown Preview' ],
-      [ 'rspec/rspec-tmbundle', 'RSpec' ],
-      [ 'wbond/sublime_package_control', 'Package Control', 'python3' ]
+      ['buymeasoda/soda-theme', 'Theme - Soda', 'soda-st3'],
+      ['chriskempson/base16-textmate', 'Color Scheme - Base16'],
+      ['cucumber/cucumber-tmbundle', 'Cucumber'],
+      ['facelessuser/ApplySyntax', 'ApplySyntax', 'ST3'],
+      ['ignacysokolowski/SublimeVintageNumbers', 'Vintage Numbers'],
+      ['jashkenas/coffee-script-tmbundle', 'CoffeeScript'],
+      ['jcartledge/sublime-surround', 'Surround'],
+      ['jcartledge/vintage-sublime-surround', 'Vintage Surround'],
+      ['joedynamite/sublime-text-2-git', 'Git', 'python3'],
+      ['kuroir/SCSS.tmbundle', 'SCSS', 'SublimeText2'],
+      ['lmno/TOML', 'TOML'],
+      ['revolunet/sublimetext-markdown-preview', 'Markdown Preview'],
+      ['rspec/rspec-tmbundle', 'RSpec'],
+      ['wbond/sublime_package_control', 'Package Control', 'python3']
     ]
   },
   vim: {
-    autoload: [ [ 'tpope/vim-pathogen' ] ],
+    autoload: [['tpope/vim-pathogen']],
     bundle: [
-      [ 'kchmck/vim-coffee-script' ],
-      [ 'tpope/vim-bundler' ],
-      [ 'tpope/vim-characterize' ],
-      [ 'tpope/vim-commentary' ],
-      [ 'tpope/vim-cucumber' ],
-      [ 'tpope/vim-endwise' ],
-      [ 'tpope/vim-eunuch' ],
-      [ 'tpope/vim-fugitive' ],
-      [ 'tpope/vim-git' ],
-      [ 'tpope/vim-haml' ],
-      [ 'tpope/vim-markdown' ],
-      [ 'tpope/vim-rails' ],
-      [ 'tpope/vim-rake' ],
-      [ 'tpope/vim-repeat' ],
-      [ 'tpope/vim-speeddating' ],
-      [ 'tpope/vim-surround' ],
-      [ 'tpope/vim-unimpaired' ]
+      ['kchmck/vim-coffee-script'],
+      ['tpope/vim-bundler'],
+      ['tpope/vim-characterize'],
+      ['tpope/vim-commentary'],
+      ['tpope/vim-cucumber'],
+      ['tpope/vim-endwise'],
+      ['tpope/vim-eunuch'],
+      ['tpope/vim-fugitive'],
+      ['tpope/vim-git'],
+      ['tpope/vim-haml'],
+      ['tpope/vim-markdown'],
+      ['tpope/vim-rails'],
+      ['tpope/vim-rake'],
+      ['tpope/vim-repeat'],
+      ['tpope/vim-speeddating'],
+      ['tpope/vim-surround'],
+      ['tpope/vim-unimpaired']
     ],
-    colors: [ [ 'chriskempson/base16-vim' ] ]
+    colors: [['chriskempson/base16-vim']]
   },
   xcode: {
-    themes: [ [ 'joedynamite/base16-xcode4' ] ]
+    themes: [['joedynamite/base16-xcode4']]
   }
 }
 

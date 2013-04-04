@@ -11,7 +11,7 @@
   "syntaxes": [
     {
       "name": "Cucumber/Syntaxes/Cucumber Steps",
-      "rules": [ { "file_name": ".*steps\\.rb$" } ]
+      "rules": [{ "file_name": ".*steps\\.rb$" }]
     },
     {
       "name": "RSpec/Syntaxes/RSpec",
@@ -22,7 +22,7 @@
     },
     {
       "name": "Rails/Ruby Haml",
-      "rules": [ { "file_name": ".*\\.hamlc$" } ]
+      "rules": [{ "file_name": ".*\\.hamlc$" }]
     }
   ]
 }

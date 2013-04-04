@@ -1,14 +1,14 @@
 [
   {
-    "keys": [ "]", "q" ],
+    "keys": ["]", "q"],
     "command": "next_result"
   },
   {
-    "keys": [ "[", "q" ],
+    "keys": ["[", "q"],
     "command": "prev_result"
   },
   {
-    "keys": [ "alt+m" ],
+    "keys": ["alt+m"],
     "command": "markdown_preview",
     "target": "browser"
   }
