@@ -18,13 +18,13 @@ REPOSITORIES = {
   },
   sublime: {
     packages: [
-      [ 'buymeasoda/soda-theme', 'Theme - Soda' ],
+      [ 'buymeasoda/soda-theme', 'Theme - Soda', 'soda-st3' ],
       [ 'chriskempson/base16-textmate', 'Color Scheme - Base16' ],
       [ 'cucumber/cucumber-tmbundle', 'Cucumber' ],
       [ 'facelessuser/ApplySyntax', 'ApplySyntax', 'ST3' ],
       [ 'ignacysokolowski/SublimeVintageNumbers', 'Vintage Numbers' ],
       [ 'jashkenas/coffee-script-tmbundle', 'CoffeeScript' ],
-      [ 'jcartledge/sublime-surround', 'Surround', 'st3' ],
+      [ 'jcartledge/sublime-surround', 'Surround' ],
       [ 'jcartledge/vintage-sublime-surround', 'Vintage Surround' ],
       [ 'joedynamite/sublime-text-2-git', 'Git', 'python3' ],
       [ 'kuroir/SCSS.tmbundle', 'SCSS', 'SublimeText2' ],
