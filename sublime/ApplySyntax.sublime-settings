@@ -12,6 +12,10 @@
     {
       "name": "Rails/Ruby Haml",
       "rules": [{ "file_name": ".*\\.hamlc$" }]
+    },
+    {
+      "name": "Sass/Syntaxes/Sass",
+      "rules": [{ "file_name": ".*\\.sass$" }]
     }
   ]
 }

@@ -29,6 +29,7 @@ REPOSITORIES = {
       ['joedynamite/sublime-text-2-git', 'Git', 'python3'],
       ['kuroir/SCSS.tmbundle', 'SCSS', 'SublimeText2'],
       ['lmno/TOML', 'TOML'],
+      ['nathos/sass-textmate-bundle', 'Sass'],
       ['revolunet/sublimetext-markdown-preview', 'Markdown Preview'],
       ['rspec/rspec-tmbundle', 'RSpec'],
       ['wbond/sublime_package_control', 'Package Control', 'python3']
