@@ -7,6 +7,7 @@
 # Aliases
 alias git="hub"
 alias haml="haml -q -f html5 --unix-newlines"
+alias iphone="open /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.app"
 alias jasmine="jasmine-node --coffee"
 alias ll="ls -alF"
 alias rr="rm -rf"
