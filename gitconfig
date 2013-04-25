@@ -1,8 +1,9 @@
 [alias]
-  st = "status -sb"
+  short-log = "status -sb"
   count = "shortlog -sn"
   undo = "reset --mixed HEAD^"
   amend = "commit --amend"
+  unstage = "reset ."
 
 [color]
   ui = true
