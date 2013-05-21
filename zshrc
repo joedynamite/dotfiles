@@ -1,18 +1,12 @@
 # Base16 shell colors
 . "$HOME/src/base16-shell/base16-default.dark.sh"
 
-# Colors
-autoload -U colors && colors
-CYAN="%{$fg[cyan]%}"
-BLUE="%{$fg[blue]%}"
-GREEN="%{$fg[green]%}"
-MAGENTA="%{$fg[magenta]%}"
-RED="%{$fg[red]%}"
-YELLOW="%{$fg[yellow]%}"
-RESET="%{$reset_color%}"
+# Git completion
+fpath=(/usr/local/share/zsh/site-functions $fpath)
+autoload -U compinit && compinit
 
 # Aliases
-alias git="hub"
+# alias git="hub"
 alias haml="haml -q -f html5 --unix-newlines"
 alias iphone="open /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.app"
 alias jasmine="jasmine-node --coffee"
@@ -22,6 +16,16 @@ alias s="subl"
 alias scss="scss --unix-newlines"
 alias unhitch="hitch -u"
 alias v="vim"
+
+# Colors
+autoload -U colors && colors
+CYAN="%{$fg[cyan]%}"
+BLUE="%{$fg[blue]%}"
+GREEN="%{$fg[green]%}"
+MAGENTA="%{$fg[magenta]%}"
+RED="%{$fg[red]%}"
+YELLOW="%{$fg[yellow]%}"
+RESET="%{$reset_color%}"
 
 # Functions
 function git_prompt() {
