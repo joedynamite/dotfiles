@@ -18,7 +18,7 @@ REPOSITORIES = {
   },
   sublime: {
     packages: [
-      ['buymeasoda/soda-theme', 'Theme - Soda', 'soda-st3'],
+      ['buymeasoda/soda-theme', 'Theme - Soda'],
       ['chriskempson/base16-textmate', 'Color Scheme - Base16'],
       ['cucumber/cucumber-tmbundle', 'Cucumber'],
       ['facelessuser/ApplySyntax', 'ApplySyntax', 'ST3'],
