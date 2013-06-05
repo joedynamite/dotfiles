@@ -6,6 +6,7 @@ fpath=(/usr/local/share/zsh/site-functions $fpath)
 autoload -U compinit && compinit
 
 # Aliases
+alias android="/Applications/Android Studio.app/sdk/tools/emulator -avd Nexus_4"
 # alias git="hub"
 alias haml="haml -q -f html5 --unix-newlines"
 alias iphone="open /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.app"
