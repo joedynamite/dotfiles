@@ -1,1 +1,1 @@
--T -d postgresql
+-T -d postgresql -m https://gist.github.com/joedynamite/5769165/raw/16573804b2dc5848501158b9c640b4b871cd5786/template.rb
