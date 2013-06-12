@@ -13,9 +13,11 @@ alias iphone="open /Applications/Xcode.app/Contents/Applications/iPhone\ Simulat
 alias jasmine="jasmine-node --coffee"
 alias ll="ls -aFhl"
 alias reload=". ~/.zshrc"
+alias restart="touch tmp/restart.txt"
 alias rr="rm -rf"
 alias s="subl"
 alias scss="scss --unix-newlines"
+alias settings="s ~/Projects/dotfiles"
 alias unhitch="hitch -u"
 alias v="vim"
 
