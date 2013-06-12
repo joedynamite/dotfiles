@@ -1,9 +1,11 @@
 [alias]
-  short-log = "status -sb"
-  count = "shortlog -sn"
-  undo = "reset --mixed HEAD^"
   amend = "commit --amend"
+  count = "shortlog -sn"
+  short-log = "log --color --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+  short-status = "status -sb"
+  undo = "reset --mixed HEAD^"
   unstage = "reset ."
+  wip = "!git add -A && git commit -m 'WIP'"
 
 [color]
   ui = true
