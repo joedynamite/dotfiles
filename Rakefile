@@ -4,7 +4,7 @@ EXCLUDES = ['README.md', 'Rakefile']
 
 HOME_DIRECTORY    = ENV['HOME']
 PRESENT_DIRECTORY = ENV['PWD']
-SRC_DIRECTORY     = "#{HOME_DIRECTORY}/src"
+SRC_DIRECTORY     = "#{HOME_DIRECTORY}/.src"
 SUBLIME_PACKAGES  = "#{HOME_DIRECTORY}/Library/Application Support/Sublime Text 2/Packages"
 VIM_DIRECTORY     = "#{HOME_DIRECTORY}/.vim"
 XCODE_DIRECTORY   = "#{HOME_DIRECTORY}/Library/Developer/Xcode/UserData/"
