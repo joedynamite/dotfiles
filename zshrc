@@ -1,5 +1,5 @@
 # Base16 shell colors
-. "$HOME/src/base16-shell/base16-default.dark.sh"
+. "$HOME/.src/base16-shell/base16-default.dark.sh"
 
 # Git completion
 fpath=(/usr/local/share/zsh/site-functions $fpath)
