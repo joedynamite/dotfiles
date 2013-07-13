@@ -18,21 +18,21 @@ REPOSITORIES = {
   },
   sublime: {
     packages: [
-      ['buymeasoda/soda-theme', 'Theme - Soda'],
+      ['buymeasoda/soda-theme', 'Theme - Soda', 'soda-st3'],
       ['chriskempson/base16-textmate', 'Color Scheme - Base16'],
       ['cucumber/cucumber-tmbundle', 'Cucumber'],
       ['facelessuser/ApplySyntax', 'ApplySyntax', 'ST3'],
       ['farcaller/DashDoc', 'DashDoc'],
       ['ignacysokolowski/SublimeVintageNumbers', 'Vintage Numbers'],
       ['jashkenas/coffee-script-tmbundle', 'CoffeeScript'],
-      ['jcartledge/sublime-surround', 'Surround'],
+      ['jcartledge/sublime-surround', 'Surround', 'st3'],
       ['jcartledge/vintage-sublime-surround', 'Vintage Surround'],
       ['jisaacks/GitGutter', 'GitGutter'],
-      ['joedynamite/sublime-text-2-git', 'Git', 'python3'],
+      ['kemayo/sublime-text-2-git', 'Git', 'python3'],
       ['kuroir/SCSS.tmbundle', 'SCSS', 'SublimeText2'],
       ['lmno/TOML', 'TOML'],
       ['nathos/sass-textmate-bundle', 'Sass', 'sublime'],
-      ['revolunet/sublimetext-markdown-preview', 'Markdown Preview'],
+      ['revolunet/sublimetext-markdown-preview', 'Markdown Preview', 'ST3'],
       ['rspec/rspec-tmbundle', 'RSpec'],
       ['wbond/sublime_package_control', 'Package Control', 'python3']
     ]
