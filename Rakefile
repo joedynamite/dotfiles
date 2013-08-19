@@ -18,7 +18,7 @@ REPOSITORIES = {
   },
   sublime: {
     packages: [
-      ['buymeasoda/soda-theme', 'Theme - Soda', 'soda-st3'],
+      ['buymeasoda/soda-theme', 'Theme - Soda'],
       ['chriskempson/base16-textmate', 'Color Scheme - Base16'],
       ['cucumber/cucumber-tmbundle', 'Cucumber'],
       ['facelessuser/ApplySyntax', 'ApplySyntax', 'ST3'],
@@ -32,9 +32,9 @@ REPOSITORIES = {
       ['kuroir/SCSS.tmbundle', 'SCSS', 'SublimeText2'],
       ['lmno/TOML', 'TOML'],
       ['nathos/sass-textmate-bundle', 'Sass', 'sublime'],
-      ['revolunet/sublimetext-markdown-preview', 'Markdown Preview', 'ST3'],
+      ['revolunet/sublimetext-markdown-preview', 'Markdown Preview'],
       ['rspec/rspec-tmbundle', 'RSpec'],
-      ['wbond/sublime_package_control', 'Package Control', 'python3']
+      # ['wbond/sublime_package_control', 'Package Control']
     ]
   },
   vim: {

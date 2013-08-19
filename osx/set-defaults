@@ -12,6 +12,3 @@ defaults write com.apple.dt.Xcode NSFontDefaultScreenFontSubstitutionEnabled -bo
 
 # Disable Time Machine local backup storage.
 sudo tmutil disablelocal
-
-# Enable key repeating.
-defaults write -g ApplePressAndHoldEnabled -bool false

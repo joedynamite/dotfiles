@@ -1,6 +1,9 @@
 # Base16 shell colors
 . "$HOME/.src/base16-shell/base16-default.dark.sh"
 
+# Case-insensitive completion
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+
 # Git completion
 fpath=(/usr/local/share/zsh/site-functions $fpath)
 autoload -U compinit && compinit
