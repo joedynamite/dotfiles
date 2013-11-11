@@ -15,7 +15,6 @@ resources
 .sass-cache
 app/views/devise
 config/*.yml
-config/*.toml
 tmp/*
 
 .bundle/

@@ -20,6 +20,7 @@
     ".bundle",
     ".git",
     ".sass-cache",
+    "Build",
     "vendor/bundle"
   ],
   "font_face": "DejaVu Sans Mono",

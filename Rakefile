@@ -30,11 +30,9 @@ REPOSITORIES = {
       ['jisaacks/GitGutter', 'GitGutter'],
       ['kemayo/sublime-text-2-git', 'Git', 'python3'],
       ['kuroir/SCSS.tmbundle', 'SCSS', 'SublimeText2'],
-      ['lmno/TOML', 'TOML'],
       ['nathos/sass-textmate-bundle', 'Sass', 'sublime'],
       ['revolunet/sublimetext-markdown-preview', 'Markdown Preview'],
       ['rspec/rspec-tmbundle', 'RSpec'],
-      # ['wbond/sublime_package_control', 'Package Control']
     ]
   },
   vim: {

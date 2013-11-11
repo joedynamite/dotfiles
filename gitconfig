@@ -1,7 +1,8 @@
 [alias]
   amend = "commit --amend"
   count = "shortlog -sn"
-  short-log = "log --color --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+  reset-author = "commit --amend --reset-author"
+  short-log = "log --oneline --decorate"
   short-status = "status -sb"
   undo = "reset --mixed HEAD^"
   unstage = "reset ."
