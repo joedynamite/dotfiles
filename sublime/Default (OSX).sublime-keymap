@@ -10,6 +10,9 @@
   {
     "keys": ["alt+m"],
     "command": "markdown_preview",
-    "target": "browser"
+    "args": {
+      "target": "browser",
+      "parser": "github"
+    }
   }
 ]
