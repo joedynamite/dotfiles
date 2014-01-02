@@ -2,7 +2,7 @@
 // are overridden in turn by file type specific settings.
 {
   "auto_reload_changed": true,
-  "color_scheme": "Packages/Color Scheme - Base16/base16-default.dark.tmTheme",
+  "color_scheme": "Packages/Theme - Spacegray/base16-eighties.dark.tmTheme",
   "draw_white_space": "all",
   "ensure_newline_at_eof_on_save": true,
   "file_exclude_patterns":
@@ -37,7 +37,7 @@
   "soda_classic_tabs": true,
   "soda_folder_icons": true,
   "tab_size": 2,
-  "theme": "Soda Light 3.sublime-theme",
+  "theme": "Spacegray Eighties.sublime-theme",
   "translate_tabs_to_spaces": true,
   "trim_trailing_white_space_on_save": true,
   "vintage_start_in_command_mode": true,

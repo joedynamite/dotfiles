@@ -18,7 +18,6 @@ REPOSITORIES = {
   },
   sublime: {
     packages: [
-      ['buymeasoda/soda-theme', 'Theme - Soda'],
       ['chriskempson/base16-textmate', 'Color Scheme - Base16'],
       ['cucumber/cucumber-tmbundle', 'Cucumber'],
       ['facelessuser/ApplySyntax', 'ApplySyntax', 'ST3'],
@@ -29,6 +28,7 @@ REPOSITORIES = {
       ['jcartledge/vintage-sublime-surround', 'Vintage Surround'],
       ['jisaacks/GitGutter', 'GitGutter'],
       ['kemayo/sublime-text-2-git', 'Git', 'python3'],
+      ['kkga/spacegray', 'Theme - Spacegray'],
       ['kuroir/SCSS.tmbundle', 'SCSS', 'SublimeText2'],
       ['nathos/sass-textmate-bundle', 'Sass', 'sublime'],
       ['revolunet/sublimetext-markdown-preview', 'Markdown Preview'],

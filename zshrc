@@ -1,5 +1,5 @@
 # Base16 shell colors
-. "$HOME/.src/base16-shell/base16-default.dark.sh"
+. "$HOME/.src/base16-shell/base16-eighties.dark.sh"
 
 # Case-insensitive completion
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
