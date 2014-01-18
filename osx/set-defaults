@@ -6,6 +6,9 @@ chflags nohidden ~/Library
 # Disable the creation of .DS_Store files on remote servers.
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 
+# Disable Mac OS X Dashboard
+defaults write com.apple.dashboard mcx-disabled -boolean YES
+
 # Disable font anti-aliasing in Xcode.
 defaults write com.apple.dt.Xcode AppleAntiAliasingThreshold 18
 defaults write com.apple.dt.Xcode NSFontDefaultScreenFontSubstitutionEnabled -bool YES

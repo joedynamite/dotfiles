@@ -18,10 +18,8 @@ REPOSITORIES = {
   },
   sublime: {
     packages: [
-      ['chriskempson/base16-textmate', 'Color Scheme - Base16'],
       ['cucumber/cucumber-tmbundle', 'Cucumber'],
       ['facelessuser/ApplySyntax', 'ApplySyntax', 'ST3'],
-      ['farcaller/DashDoc', 'DashDoc'],
       ['ignacysokolowski/SublimeVintageNumbers', 'Vintage Numbers'],
       ['jashkenas/coffee-script-tmbundle', 'CoffeeScript'],
       ['jcartledge/sublime-surround', 'Surround', 'st3'],
@@ -30,6 +28,7 @@ REPOSITORIES = {
       ['kemayo/sublime-text-2-git', 'Git', 'python3'],
       ['kkga/spacegray', 'Theme - Spacegray'],
       ['kuroir/SCSS.tmbundle', 'SCSS', 'SublimeText2'],
+      ['lmno/TOML', 'TOML'],
       ['nathos/sass-textmate-bundle', 'Sass', 'sublime'],
       ['revolunet/sublimetext-markdown-preview', 'Markdown Preview'],
       ['rspec/rspec-tmbundle', 'RSpec'],
@@ -37,25 +36,7 @@ REPOSITORIES = {
   },
   vim: {
     autoload: [['tpope/vim-pathogen']],
-    bundle: [
-      ['kchmck/vim-coffee-script'],
-      ['tpope/vim-bundler'],
-      ['tpope/vim-characterize'],
-      ['tpope/vim-commentary'],
-      ['tpope/vim-cucumber'],
-      ['tpope/vim-endwise'],
-      ['tpope/vim-eunuch'],
-      ['tpope/vim-fugitive'],
-      ['tpope/vim-git'],
-      ['tpope/vim-haml'],
-      ['tpope/vim-markdown'],
-      ['tpope/vim-rails'],
-      ['tpope/vim-rake'],
-      ['tpope/vim-repeat'],
-      ['tpope/vim-speeddating'],
-      ['tpope/vim-surround'],
-      ['tpope/vim-unimpaired']
-    ],
+    bundle: [['tpope/vim-git']],
     colors: [['chriskempson/base16-vim']]
   },
   xcode: {
