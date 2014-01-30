@@ -55,6 +55,9 @@ function hitch() {
 
 hitch
 
+# direnv
+eval "$(direnv hook $0)"
+
 # Prompt
 setopt prompt_subst
 function precmd() {

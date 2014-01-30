@@ -12,6 +12,8 @@ resources
 .powenv
 .powder
 
+.envrc
+
 .sass-cache
 app/views/devise
 config/database.yml
