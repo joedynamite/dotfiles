@@ -1,8 +1,8 @@
 [alias]
   amend = "commit --amend"
   count = "shortlog -sn"
-  reset-author = "commit --amend --reset-author"
-  short-log = "log --oneline --decorate"
+  graph = "log --oneline --decorate --date-order --graph"
+  reset-author = "!git amend --reset-author"
   short-status = "status -sb"
   undo = "reset --mixed HEAD^"
   unstage = "reset ."
