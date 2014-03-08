@@ -24,6 +24,7 @@ alias scss="scss --unix-newlines"
 alias settings="s ~/Projects/dotfiles"
 alias unhitch="hitch -u"
 alias v="vim"
+alias vhosts="s /etc/apache2/extra/httpd-vhosts.conf"
 
 # Colors
 autoload -U colors && colors
