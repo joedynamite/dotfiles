@@ -1,5 +1,7 @@
-# Base16 shell colors
-. "$HOME/.src/base16-shell/base16-eighties.dark.sh"
+# Base16 Shell
+BASE16_SCHEME="eighties"
+BASE16_SHELL="$HOME/.src/base16-shell/base16-$BASE16_SCHEME.dark.sh"
+[[ -s $BASE16_SHELL ]] && . $BASE16_SHELL
 
 # Case-insensitive completion
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
