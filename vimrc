@@ -7,14 +7,11 @@ colorscheme base16-eighties
 filetype plugin indent on
 
 let base16colorspace=256
-
 set background=dark
 set clipboard=unnamed
 set colorcolumn=81
 set cursorline
 set expandtab
-set guifont=DejaVu\ Sans\ Mono:h14
-set guioptions-=T
 set list listchars=eol:¬,tab:▸\ ,trail:･
 set noantialias
 set number
