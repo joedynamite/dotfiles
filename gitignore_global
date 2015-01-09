@@ -21,3 +21,4 @@ tmp/*
 
 .bundle/
 vendor/bundle
+public/assets/source_maps
