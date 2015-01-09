@@ -2,7 +2,7 @@ au BufRead,BufNewFile *.hamlc set ft=haml
 
 call pathogen#infect()
 
-colorscheme base16-eighties
+colorscheme base16-google
 
 filetype plugin indent on
 
