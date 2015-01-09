@@ -16,6 +16,10 @@
     {
       "name": "Sass/Syntaxes/Sass",
       "rules": [{ "file_name": ".*\\.sass$" }]
+    },
+    {
+      "name": "Objective-C/Objective-C",
+      "rules": [{ "file_name": ".*\\.h$" }]
     }
   ]
 }
