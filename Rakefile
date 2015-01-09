@@ -11,36 +11,36 @@ XCODE_DIRECTORY   = "#{HOME_DIRECTORY}/Library/Developer/Xcode/UserData/"
 
 REPOSITORIES = {
   source: {
-    repos: [
-      ['chriskempson/base16-iterm2'],
-      ['chriskempson/base16-shell']
-    ]
+    repos: [['chriskempson/base16-builder']]
   },
   sublime: {
     packages: [
       ['cucumber/cucumber-tmbundle', 'Cucumber'],
       ['facelessuser/ApplySyntax', 'ApplySyntax', 'ST3'],
-      ['ignacysokolowski/SublimeVintageNumbers', 'Vintage Numbers'],
+      ['facelessuser/BracketHighlighter', 'BracketHighlighter', 'ST3'],
+      ['ignacysokolowski/SublimeVintageNumbers', 'VintageNumbers'],
       ['jashkenas/coffee-script-tmbundle', 'CoffeeScript'],
       ['jcartledge/sublime-surround', 'Surround', 'st3'],
-      ['jcartledge/vintage-sublime-surround', 'Vintage Surround'],
+      ['jcartledge/sublime-worksheet', 'Worksheet', 'st3'],
+      ['jcartledge/vintage-sublime-surround', 'VintageSurround'],
       ['jisaacks/GitGutter', 'GitGutter'],
-      ['kemayo/sublime-text-2-git', 'Git', 'python3'],
+      ['kemayo/sublime-text-git', 'Git', 'python3'],
       ['kkga/spacegray', 'Theme - Spacegray'],
-      ['kuroir/SCSS.tmbundle', 'SCSS', 'SublimeText2'],
       ['lmno/TOML', 'TOML'],
+      ['MarioRicalde/SCSS.tmbundle', 'SCSS'],
       ['nathos/sass-textmate-bundle', 'Sass', 'sublime'],
-      ['revolunet/sublimetext-markdown-preview', 'Markdown Preview'],
-      ['rspec/rspec-tmbundle', 'RSpec'],
+      ['quiqueg/Swift-Sublime-Package', 'Swift'],
+      ['revolunet/sublimetext-markdown-preview', 'MarkdownPreview'],
+      ['rspec/rspec.tmbundle', 'RSpec'],
+      ['wbond/sublime_alignment', 'Alignment']
     ]
   },
   vim: {
     autoload: [['tpope/vim-pathogen']],
-    bundle: [['tpope/vim-git']],
-    colors: [['chriskempson/base16-vim']]
-  },
-  xcode: {
-    themes: [['joedynamite/base16-xcode4']]
+    bundle: [
+      ['tpope/vim-git'],
+      ['tpope/vim-rails']
+    ]
   }
 }
 
