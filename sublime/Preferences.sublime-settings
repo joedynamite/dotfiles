@@ -21,7 +21,9 @@
     ".git",
     ".sass-cache",
     "Build",
-    "vendor/bundle"
+    "vendor/bundle",
+    "*.xcworkspace",
+    "*.xcodeproj"
   ],
   "font_face": "DejaVu Sans Mono",
   "font_options": ["no_antialias"],
