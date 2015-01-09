@@ -12,10 +12,11 @@ fpath=(/usr/local/share/zsh/site-functions $fpath)
 autoload -U compinit && compinit
 
 # Aliases
-alias android="/Applications/Android Studio.app/sdk/tools/emulator -avd Nexus_4"
+alias a="atom"
+alias android="/Applications/Android\ Studio.app/sdk/tools/emulator -avd Nexus4"
 alias battery='ioreg -w0 -l | grep Capacity | cut -d " " -f 17-50'
 alias git="hub"
-alias iphone="open /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.app"
+alias iphone="open /Applications/Xcode.app/Contents/Applications/iOSt\ Simulator.app"
 alias ll="ls -aFhl"
 alias reload=". ~/.zshrc"
 alias restart="touch tmp/restart.txt"
@@ -24,7 +25,7 @@ alias s="subl"
 alias settings="s ~/Projects/dotfiles"
 alias unhitch="hitch -u"
 alias v="vim"
-alias vhosts="s /etc/apache2/extra/httpd-vhosts.conf"
+alias vhosts="sudo subl /etc/apache2/extra/httpd-vhosts.conf"
 
 # Colors
 autoload -U colors && colors
