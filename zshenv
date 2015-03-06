@@ -3,7 +3,7 @@ CLICOLOR="1"
 GREPCOLORS="ExGxFxDxCxDxDxHbAdExEx"
 LSCOLORS="ExGxFxDxCxDxDxHbAdExEx"
 NVM_DIR="/usr/local/var/nvm"
-PATH="/usr/local/bin/npm:/usr/local/heroku/bin:/usr/local/var/rbenv/shims:/usr/local/bin:/usr/local/sbin:$PATH"
+PATH="/usr/local/heroku/bin:/usr/local/var/rbenv/shims:/usr/local/bin:/usr/local/sbin:$PATH"
 RBENV_ROOT="/usr/local/var/rbenv"
 VISUAL="vim"
 

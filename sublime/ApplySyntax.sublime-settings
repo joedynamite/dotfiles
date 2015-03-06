@@ -20,6 +20,10 @@
     {
       "name": "Objective-C/Objective-C",
       "rules": [{ "file_name": ".*\\.h$" }]
+    },
+    {
+      "name": "JavaScript/JSON",
+      "rules": [{ "file_name": "^.*(\\.bowerrc|\\.ember-cli)$" }]
     }
   ]
 }
