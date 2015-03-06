@@ -11,6 +11,9 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 fpath=(/usr/local/share/zsh/site-functions $fpath)
 autoload -U compinit && compinit
 
+# Git Flow completion
+source /usr/local/share/zsh/site-functions/git-flow-completion.zsh
+
 # Aliases
 alias a="atom"
 alias android="/Applications/Android\ Studio.app/sdk/tools/emulator -avd Nexus4"
