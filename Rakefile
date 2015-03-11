@@ -30,6 +30,7 @@ REPOSITORIES = {
       ['MarioRicalde/SCSS.tmbundle', 'SCSS'],
       ['nathos/sass-textmate-bundle', 'Sass', 'sublime'],
       ['quiqueg/Swift-Sublime-Package', 'Swift'],
+      ['reactjs/sublime-react', 'React'],
       ['revolunet/sublimetext-markdown-preview', 'MarkdownPreview'],
       ['rspec/rspec.tmbundle', 'RSpec'],
       ['wbond/sublime_alignment', 'Alignment']

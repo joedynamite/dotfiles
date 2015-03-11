@@ -24,6 +24,10 @@
     {
       "name": "JavaScript/JSON",
       "rules": [{ "file_name": "^.*(\\.bowerrc|\\.ember-cli)$" }]
+    },
+    {
+      "name": "React/syntax/jsx/tmLanguage/JavaScript (JSX)",
+      "rules": [{ "file_name": ".*(\\.js|\\.jsx)$" }]
     }
   ]
 }
