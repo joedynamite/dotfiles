@@ -14,5 +14,13 @@
       "target": "browser",
       "parser": "github"
     }
+  },
+  {
+    "keys": ["ctrl+]"],
+    "command": "goto_definition"
+  },
+  {
+    "keys": ["ctrl+t"],
+    "command": "jump_back"
   }
 ]
