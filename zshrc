@@ -45,11 +45,11 @@ function git_prompt() {
   local _branch_name=`command git branch --no-color 2> /dev/null | awk '/^\*/ { print $2 }'`
 
   if [[ $(command git status 2> /dev/null | tail -n1) != "nothing to commit, working directory clean" ]]; then
-    local _dirty=" with ${BLUE}Δ$RESET"
+    local _dirty=" with ${RED}Δ$RESET"
   fi
 
   if [ -n "$_branch_name" ]; then
-    echo -e " on [±:$BLUE$_branch_name$RESET$_dirty]"
+    echo -e " on [±:$RED$_branch_name$RESET$_dirty]"
   fi
 }
 
@@ -66,5 +66,5 @@ eval "$(direnv hook $0)"
 # Prompt
 setopt prompt_subst
 function precmd() {
-  export PS1=$'$RED%n$RESET at $YELLOW%m$RESET in $GREEN%~$RESET$(git_prompt) on $MAGENTA%D{%a %B %d}$RESET at $CYAN%D{%I:%M %p}$RESET\n⚡ '
+  export PS1=$'$YELLOW%~$RESET$(git_prompt) at $BLUE%D{%I:%M %p}$RESET\n⚡ '
 }
