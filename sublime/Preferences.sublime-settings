@@ -29,8 +29,8 @@
     "dist",
     "tmp"
   ],
-  "font_face": "Input",
-  "font_size": 16.0,
+  "font_face": "InputMonoCompressed",
+  "font_size": 18.0,
   "highlight_line": true,
   "highlight_modified_tabs": true,
   "hot_exit": false,
