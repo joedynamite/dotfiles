@@ -28,6 +28,10 @@
     {
       "name": "React/syntax/jsx/tmLanguage/JavaScript (JSX)",
       "rules": [{ "file_name": ".*(\\.js|\\.jsx)$" }]
+    },
+    {
+      "name": "ShellScript/Shell-Unix-Generic",
+      "rules": [{ "file_name": "^.*\\.?(zshrc|zshenv|powconfig)$" }]
     }
   ]
 }
