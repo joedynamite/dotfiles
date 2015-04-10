@@ -22,11 +22,12 @@
     ".sass-cache",
     "Build",
     "vendor/bundle",
-    "vendor/modules",
-    "vendor/components",
+    "node_modules",
+    "bower_components",
     "*.xcworkspace",
     "*.xcodeproj",
-    "dist"
+    "dist",
+    "tmp"
   ],
   "font_face": "Input",
   "font_size": 16.0,
