@@ -10,11 +10,9 @@
 [submodule "src/ApplySyntax"]
 	path = src/ApplySyntax
 	url = git@github.com:facelessuser/ApplySyntax
-	branch = ST3
 [submodule "src/BracketHighlighter"]
 	path = src/BracketHighlighter
 	url = git@github.com:facelessuser/BracketHighlighter
-	branch = ST3
 [submodule "src/SublimeVintageNumbers"]
 	path = src/SublimeVintageNumbers
 	url = git@github.com:ignacysokolowski/SublimeVintageNumbers
