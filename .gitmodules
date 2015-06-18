@@ -62,3 +62,6 @@
 [submodule "src/vim-git"]
 	path = src/vim-git
 	url = git@github.com:tpope/vim-git
+[submodule "src/babel-sublime"]
+	path = src/babel-sublime
+	url = git@github.com:babel/babel-sublime
