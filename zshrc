@@ -1,9 +1,3 @@
-# Base16 Shell
-BASE16_SCHEME="eighties"
-BASE16_VARIANT="dark"
-BASE16_SHELL="$HOME/.src/base16-builder/output/shell/base16-$BASE16_SCHEME.$BASE16_VARIANT.sh"
-[[ -s $BASE16_SHELL ]] && . $BASE16_SHELL
-
 # Case-insensitive completion
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
@@ -11,24 +5,21 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 fpath=(/usr/local/share/zsh/site-functions $fpath)
 autoload -U compinit && compinit
 
-# Git Flow completion
-source /usr/local/share/zsh/site-functions/git-flow-completion.zsh
-
 # Aliases
-alias a="atom"
 alias android="/Applications/Android\ Studio.app/sdk/tools/emulator -avd Nexus4"
 alias battery='ioreg -w0 -l | grep Capacity | cut -d " " -f 17-50'
+alias bom="rm -rf bower_components && bower cache clean && bower install"
 alias git="hub"
-alias iphone="open /Applications/Xcode.app/Contents/Applications/iOSt\ Simulator.app"
+alias iphone="open /Applications/Xcode.app/Contents/Applications/iOS Simulator.app"
 alias ll="ls -aFhl"
-alias rebower="rm -rf bower_components && bower install"
+alias nom="rm -rf node_modules && npm cache clean && npm install"
+alias nombom="nom && bom"
 alias rebundle="rm -rf vendor/bundle && bundle install"
-alias reload=". ~/.zshrc"
-alias renpm="rm -rf node_modules && npm install"
+alias reload="source ~/.zshrc"
 alias restart="touch tmp/restart.txt"
 alias rr="rm -rf"
 alias s="subl"
-alias settings="s ~/Projects/dotfiles"
+alias settings="s ~/.dotfiles"
 alias unhitch="hitch -u"
 alias v="vim"
 alias vhosts="sudo subl /etc/apache2/extra/httpd-vhosts.conf"

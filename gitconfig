@@ -2,7 +2,7 @@
   amend = "commit --amend"
   count = "shortlog -sn"
   graph = "log --oneline --decorate --date-order --graph"
-  reset-author = "!git amend --reset-author"
+  reset-author = "commit --amend --reset-author"
   short-status = "status -sb"
   undo = "reset --mixed HEAD^"
   unstage = "reset ."
@@ -52,12 +52,7 @@
   name = "Joe Bilt"
   email = "code@joebilt.com"
 
-[filter "media"]
+[filter "lfs"]
+  clean = git lfs clean %f
+  smudge = git lfs smudge %f
   required = true
-  clean = git media clean %f
-  smudge = git media smudge %f
-[gitflow "feature.finish"]
-  rebase = true
-  preserve-merges = true
-  no-ff = true
-  showcommands = true
