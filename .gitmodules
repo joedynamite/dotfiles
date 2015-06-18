@@ -50,9 +50,6 @@
 [submodule "src/Swift-Sublime-Package"]
 	path = src/Swift-Sublime-Package
 	url = git@github.com:quiqueg/Swift-Sublime-Package
-[submodule "src/sublime-react"]
-	path = src/sublime-react
-	url = git@github.com:reactjs/sublime-react
 [submodule "src/sublimetext-markdown-preview"]
 	path = src/sublimetext-markdown-preview
 	url = git@github.com:revolunet/sublimetext-markdown-preview
