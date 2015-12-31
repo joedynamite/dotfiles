@@ -65,3 +65,6 @@
 [submodule "src/babel-sublime"]
 	path = src/babel-sublime
 	url = git@github.com:babel/babel-sublime
+[submodule "src/elixir-tmbundle"]
+	path = src/elixir-tmbundle
+	url = git@github.com:elixir-lang/elixir-tmbundle
