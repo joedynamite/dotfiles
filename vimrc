@@ -14,6 +14,7 @@ set expandtab
 set list listchars=eol:¬,tab:▸\ ,trail:･
 set noantialias
 set nowrap
+set noswapfile
 set number
 set ruler
 set softtabstop=2

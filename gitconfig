@@ -1,4 +1,5 @@
 [alias]
+  status = "status -sb"
   amend = "commit --amend"
   count = "shortlog -sn"
   graph = "log --oneline --decorate --date-order --graph"

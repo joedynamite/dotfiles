@@ -68,3 +68,9 @@
 [submodule "src/elixir-tmbundle"]
 	path = src/elixir-tmbundle
 	url = git@github.com:elixir-lang/elixir-tmbundle
+[submodule "src/toothpaste"]
+	path = src/toothpaste
+	url = git@github.com:imcatnoone/toothpaste
+[submodule "src/TypeScript-Sublime-Plugin"]
+	path = src/TypeScript-Sublime-Plugin
+	url = git@github.com:Microsoft/TypeScript-Sublime-Plugin
