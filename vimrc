@@ -2,7 +2,7 @@ au BufRead,BufNewFile *.hamlc set ft=haml
 
 call pathogen#infect()
 
-colorscheme base16-eighties
+colorscheme base16-default
 
 filetype plugin indent on
 
@@ -18,6 +18,5 @@ set number
 set ruler
 set softtabstop=2
 set tabstop=2
-set undofile
 
 syntax on

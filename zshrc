@@ -38,7 +38,7 @@ RESET="%{$reset_color%}"
 function git_prompt() {
   local _branch_name=`command git branch --no-color 2> /dev/null | awk '/^\*/ { print $2 }'`
 
-  if [[ $(command git status 2> /dev/null | tail -n1) != "nothing to commit, working directory clean" ]]; then
+  if [[ $(command git status 2> /dev/null | tail -n1) != "nothing to commit, working tree clean" ]]; then
     local _dirty=" with ${RED}Δ$RESET"
   fi
 
@@ -52,7 +52,7 @@ function hitch() {
   if [[ -s "$HOME/.hitch_export_authors" ]] ; then source "$HOME/.hitch_export_authors" ; fi
 }
 
-hitch
+# hitch
 
 # direnv
 eval "$(direnv hook $0)"
@@ -62,3 +62,16 @@ setopt prompt_subst
 function precmd() {
   export PS1=$'$YELLOW%~$RESET$(git_prompt) at $BLUE%D{%I:%M %p}$RESET\n⚡ '
 }
+
+# Add SSH Keys
+ssh-add -A > /dev/null 2>&1
+
+# Run GPG Agent
+# if ! [ -n "$(pgrep gpg-agent)" ]; then
+#   eval $(gpg-agent --daemon --use-standard-socket --pinentry-program /usr/local/bin/pinentry)
+# fi
+# eval $(/usr/libexec/path_helper -s)
+
+# OPAM configuration
+. /Users/dynamite/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+eval $(opam config env)

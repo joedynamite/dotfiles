@@ -5,7 +5,7 @@ FPP_EDITOR="subl"
 GREPCOLORS="ExGxFxDxCxDxDxHbAdExEx"
 LSCOLORS="ExGxFxDxCxDxDxHbAdExEx"
 NVM_DIR="/usr/local/var/nvm"
-PATH="/usr/local/heroku/bin:/usr/local/var/rbenv/shims:/usr/local/bin:/usr/local/sbin:$PATH"
+PATH="/usr/local/heroku/bin:/usr/local/var/rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 RBENV_ROOT="/usr/local/var/rbenv"
 
 export CDPATH CLICOLOR FPP_EDITOR GREPCOLORS LSCOLORS NVM_DIR PATH RBENV_ROOT
