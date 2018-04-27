@@ -2,7 +2,10 @@ au BufRead,BufNewFile *.hamlc set ft=haml
 
 call pathogen#infect()
 
-colorscheme base16-eighties
+let g:jsx_ext_required=0
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+
+colorscheme OceanicNext
 
 filetype plugin indent on
 
@@ -18,6 +21,6 @@ set number
 set ruler
 set softtabstop=2
 set tabstop=2
-set undofile
+set noundofile
 
 syntax on

@@ -1,7 +1,0 @@
-#!/bin/bash
-
-# Disable the creation of .DS_Store files on remote servers.
-defaults write com.apple.desktopservices DSDontWriteNetworkStores true
-
-# Disable Time Machine local backup storage.
-sudo tmutil disablelocal

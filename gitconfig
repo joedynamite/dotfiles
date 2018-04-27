@@ -2,42 +2,21 @@
   amend = "commit --amend"
   count = "shortlog -sn"
   graph = "log --oneline --decorate --date-order --graph"
+  loc = "!git ls-files | xargs wc -l"
   reset-author = "commit --amend --reset-author"
   short-status = "status -sb"
   undo = "reset --mixed HEAD^"
   unstage = "reset ."
-  wip = "!git add -A && git commit -m 'WIP'"
+  wip = "!git add -A && git commit --no-gpg-sign -m 'WIP'"
 
 [color]
   ui = true
-
-[core]
-  excludesfile = "~/.gitignore_global"
-
-[diff]
-  tool = "Kaleidoscope"
-
-[difftool]
-  prompt = false
-
-[difftool "Kaleidoscope"]
-  cmd = "ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\""
 
 [github]
   user = "joedynamite"
 
 [help]
   autocorrect = 1
-
-[merge]
-  tool = "Kaleidoscope"
-
-[mergetool]
-  prompt = false
-
-[mergetool "Kaleidoscope"]
-  cmd = "ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot"
-  trustExitCode = true
 
 [pull]
   rebase = true
@@ -49,10 +28,10 @@
   autosquash = true
 
 [user]
-  name = "Joe Bilt"
-  email = "code@joebilt.com"
-
+  name = Joe Bilt
+  email = joebilt@gmail.com
 [filter "lfs"]
-  clean = git lfs clean %f
-  smudge = git lfs smudge %f
-  required = true
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
