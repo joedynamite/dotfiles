@@ -45,20 +45,20 @@ function precmd() {
 # Add all identities stored in your keychain.
 ssh-add -A 2>/dev/null
 
-bindkey -v
-export KEYTIMEOUT=1
-
-function zle-line-init zle-keymap-select () {
-    if [ "$TERM" = "xterm-256color" ]; then
-        if [ $KEYMAP = vicmd ]; then
-            # the command mode for vi
-            echo -ne "\e[2 q"
-        else
-            # the insert mode for vi
-            echo -ne "\e[4 q"
-        fi
-    fi
-}
-
-zle -N zle-keymap-select
-zle -N zle-line-init
+# bindkey -v
+# export KEYTIMEOUT=1
+#
+# function zle-line-init zle-keymap-select () {
+#     if [ "$TERM" = "xterm-256color" ]; then
+#         if [ $KEYMAP = vicmd ]; then
+#             # the command mode for vi
+#             echo -ne "\e[2 q"
+#         else
+#             # the insert mode for vi
+#             echo -ne "\e[4 q"
+#         fi
+#     fi
+# }
+#
+# zle -N zle-keymap-select
+# zle -N zle-line-init
