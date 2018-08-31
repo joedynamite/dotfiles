@@ -43,3 +43,6 @@ setopt prompt_subst
 function precmd() {
   export PS1=$'$YELLOW%~$RESET$(git_prompt) at $BLUE%D{%I:%M %p}$RESET\n$ '
 }
+
+# SSH Keys
+ssh-add -A 2> /dev/null
