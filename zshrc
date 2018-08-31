@@ -6,23 +6,11 @@ fpath=(/usr/local/share/zsh/site-functions $fpath)
 autoload -U compinit && compinit
 
 # Aliases
-alias android="/Applications/Android\ Studio.app/sdk/tools/emulator -avd Nexus4"
-alias battery='ioreg -w0 -l | grep Capacity | cut -d " " -f 17-50'
-alias bom="rm -rf bower_components && bower cache clean && bower install"
+alias a="atom"
 alias git="hub"
-alias iphone="open /Applications/Xcode.app/Contents/Applications/iOS Simulator.app"
 alias ll="ls -aFhl"
-alias nom="rm -rf node_modules && npm cache clean && npm install"
-alias nombom="nom && bom"
-alias rebundle="rm -rf vendor/bundle && bundle install"
-alias reload="source ~/.zshrc"
-alias restart="touch tmp/restart.txt"
 alias rr="rm -rf"
-alias s="subl"
-alias settings="s ~/.dotfiles"
-alias unhitch="hitch -u"
 alias v="vim"
-alias vhosts="sudo subl /etc/apache2/extra/httpd-vhosts.conf"
 
 # Colors
 autoload -U colors && colors
