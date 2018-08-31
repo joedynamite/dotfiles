@@ -26,7 +26,7 @@ RESET="%{$reset_color%}"
 function git_prompt() {
   local _branch_name=`command git branch --no-color 2> /dev/null | awk '/^\*/ { print $2 }'`
 
-  if [[ $(command git status 2> /dev/null | tail -n1) != "nothing to commit, working directory clean" ]]; then
+  if [[ $(command git status 2> /dev/null | tail -n1) != "nothing to commit, working tree clean" ]]; then
     local _dirty=" with ${RED}Δ$RESET"
   fi
 
