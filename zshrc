@@ -41,5 +41,5 @@ eval "$(direnv hook $0)"
 # Prompt
 setopt prompt_subst
 function precmd() {
-  export PS1=$'$YELLOW%~$RESET$(git_prompt) at $BLUE%D{%I:%M %p}$RESET\n⚡ '
+  export PS1=$'$YELLOW%~$RESET$(git_prompt) at $BLUE%D{%I:%M %p}$RESET\n$ '
 }
