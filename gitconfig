@@ -6,7 +6,7 @@
   short-status = "status -sb"
   undo = "reset --mixed HEAD^"
   unstage = "reset ."
-  wip = "!git add -A && git commit -m 'WIP'"
+  wip = "!git add -A && git commit --no-gpg-sign -m 'WIP'"
 
 [color]
   ui = true
